@@ -8,7 +8,7 @@ class SongsController < ApplicationController
         flash[:alert] = "Artist not found"
       end
     else
-      @songs = Song.all
+      @songs = artist.songs
     end
     @songs = Song.all
   end
